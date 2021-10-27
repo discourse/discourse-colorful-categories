@@ -6,12 +6,13 @@ export default {
   initialize() {
     withPluginApi("0.8.7", (api) => {
       api.modifyClass("controller:composer", {
+        pluginId: "colorful-categories",
         @observes("model.categoryId")
         getCategory() {
           let categoryCreateId = this.get("model.categoryId");
           let categoryReplyId = this.get("model.topic.category_id");
-
           let category;
+
           if (categoryReplyId) {
             category = this.site.categories.findBy("id", categoryReplyId);
           } else if (categoryCreateId) {

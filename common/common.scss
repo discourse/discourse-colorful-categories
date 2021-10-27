@@ -1,69 +1,136 @@
-:root {
-  --composer-category-text-color: var(--secondary);
-  --composer-category-color: var(--tertiary);
-}
-
-#reply-control {
-  .grippie {
-    transition: background-color 0.25s;
-    background-color: var(--composer-category-color, var(--primary-low-mid));
-  }
-
-  .save-or-cancel {
-    .btn-primary {
-      background-color: var(--composer-category-color);
-      color: var(--composer-category-text-color);
-      .d-icon {
-        color: var(--composer-category-text-color);
-      }
-    }
-  }
-}
-
-.d-header {
-  box-shadow: none;
-  background-color: var(--category-color);
-  transition: background-color 0.25s;
-  color: var(--category-text-color);
-}
-
-.d-header-icons .icon {
-  .d-icon {
-    color: var(--category-text-color);
-  }
-  .discourse-no-touch & {
-    &:hover,
-    &:focus {
-      background: var(--category-text-color);
-      .d-icon {
-        color: var(--category-color);
-      }
-    }
-  }
-}
-
-.timeline-container .topic-timeline .timeline-scrollarea {
-  border-color: var(--primary-low);
-}
-
-.timeline-container .topic-timeline .timeline-handle {
-  background: var(--category-color);
-}
-
 @import "common/components/buttons";
 
-body.category #create-topic,
-.btn.btn-primary {
-  @include btn(
-    $text-color: var(--category-text-color),
-    $bg-color: var(--category-color),
-    $icon-color: var(--category-text-color),
-    $hover-text-color: var(--category-text-color),
-    $hover-bg-color: var(--category-color),
-    $hover-icon-color: var(--category-text-color)
-  );
+:root {
+  // fallback variables
+  --composer-category-text-color: var(--secondary);
+  --composer-category-color: var(--tertiary);
+  --category-color: var(--secondary);
+  --category-text-color: var(--primary-low-mid);
 }
 
-body.category #create-topic {
-  margin-left: 0.5em;
+@if $use-category-color-in-composer == "true" {
+  #reply-control {
+    // composer colors
+    .grippie {
+      transition: background-color 0.25s;
+      background-color: var(--composer-category-color, var(--primary-low-mid));
+    }
+
+    .save-or-cancel {
+      .btn-primary {
+        background-color: var(--composer-category-color);
+        color: var(--composer-category-text-color);
+        .d-icon {
+          color: var(--composer-category-text-color);
+        }
+      }
+    }
+  }
+}
+
+@if $use-category-color-in-header == "true" {
+  // header colors
+
+  .d-header {
+    background-color: var(--category-color);
+    transition: background-color 0.25s;
+    color: var(--category-text-color);
+
+    .title {
+      a,
+      a:visited {
+        color: var(--category-text-color);
+      }
+    }
+  }
+
+  .d-header-icons .icon {
+    .d-icon {
+      color: var(--category-text-color);
+    }
+    .discourse-no-touch & {
+      &:hover,
+      &:focus {
+        background: var(--category-text-color);
+        .d-icon {
+          color: var(--category-color);
+        }
+      }
+    }
+  }
+
+  .drop-down-mode .d-header-icons .active .icon .d-icon {
+    color: var(--category-color);
+  }
+
+  .extra-info-wrapper {
+    .badge-wrapper.bullet span.badge-category,
+    .badge-wrapper.bar span.badge-category,
+    .badge-wrapper.none span.badge-category,
+    .topic-link {
+      color: var(--category-text-color);
+      .d-icon {
+        color: currentColor;
+      }
+    }
+    .discourse-tag {
+      color: var(
+        --category-text-color
+      ) !important; // override important in core
+    }
+
+    .badge-category-bg,
+    .badge-category-parent-bg {
+      border: 1px solid var(--category-text-color);
+    }
+
+    .badge-category-parent-bg {
+      border-right: 0;
+      + .badge-category-bg {
+        border-left: 0;
+      }
+    }
+
+    .title-wrapper .topic-statuses .d-icon {
+      color: var(--category-text-color);
+    }
+  }
+}
+
+@if $use-category-color-in-timeline == "true" {
+  // timeline colors
+
+  .timeline-container .topic-timeline .timeline-scrollarea {
+    border-color: var(--primary-low);
+  }
+
+  .timeline-container .topic-timeline .timeline-handle {
+    background: var(--category-color);
+  }
+}
+
+@if $use-category-color-in-buttons == "true" {
+  // some buttons
+
+  body.category #create-topic,
+  #topic-footer-buttons .btn.btn-primary {
+    @include btn(
+      $text-color: var(--category-text-color),
+      $bg-color: var(--category-color),
+      $icon-color: var(--category-text-color),
+      $hover-text-color: var(--category-text-color),
+      $hover-bg-color: var(--category-color),
+      $hover-icon-color: var(--category-text-color)
+    );
+  }
+
+  // the above include reset some margins, need to add them back
+
+  #topic-footer-buttons .btn.btn-primary {
+    margin-bottom: 0.5em;
+  }
+
+  body.category #create-topic {
+    margin-left: 0.5em;
+  }
 }

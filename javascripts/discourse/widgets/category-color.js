@@ -35,6 +35,8 @@ export default createWidget("category-color", {
       }
 
       if (categoryColor) {
+        console.log(categoryColor);
+
         // set category color as custom CSS property
         document
           .querySelector("body")
@@ -43,15 +45,10 @@ export default createWidget("category-color", {
           .querySelector("body")
           .style.setProperty("--category-text-color", categoryTextColor);
       } else {
+        document.querySelector("body").style.removeProperty("--category-color");
         document
           .querySelector("body")
-          .style.setProperty("--category-color", settings.default_color);
-        document
-          .querySelector("body")
-          .style.setProperty(
-            "--category-text-color",
-            settings.default_text_color
-          );
+          .style.removeProperty("--category-text-color");
       }
     }
   },
