@@ -1,0 +1,7 @@
+default_color:
+  type: string
+  default: white
+
+default_text_color:
+  type: string
+  default: "var(--primary-low-mid)"

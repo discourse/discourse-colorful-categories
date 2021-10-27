@@ -1,0 +1,69 @@
+:root {
+  --composer-category-text-color: var(--secondary);
+  --composer-category-color: var(--tertiary);
+}
+
+#reply-control {
+  .grippie {
+    transition: background-color 0.25s;
+    background-color: var(--composer-category-color, var(--primary-low-mid));
+  }
+
+  .save-or-cancel {
+    .btn-primary {
+      background-color: var(--composer-category-color);
+      color: var(--composer-category-text-color);
+      .d-icon {
+        color: var(--composer-category-text-color);
+      }
+    }
+  }
+}
+
+.d-header {
+  box-shadow: none;
+  background-color: var(--category-color);
+  transition: background-color 0.25s;
+  color: var(--category-text-color);
+}
+
+.d-header-icons .icon {
+  .d-icon {
+    color: var(--category-text-color);
+  }
+  .discourse-no-touch & {
+    &:hover,
+    &:focus {
+      background: var(--category-text-color);
+      .d-icon {
+        color: var(--category-color);
+      }
+    }
+  }
+}
+
+.timeline-container .topic-timeline .timeline-scrollarea {
+  border-color: var(--primary-low);
+}
+
+.timeline-container .topic-timeline .timeline-handle {
+  background: var(--category-color);
+}
+
+@import "common/components/buttons";
+
+body.category #create-topic,
+.btn.btn-primary {
+  @include btn(
+    $text-color: var(--category-text-color),
+    $bg-color: var(--category-color),
+    $icon-color: var(--category-text-color),
+    $hover-text-color: var(--category-text-color),
+    $hover-bg-color: var(--category-color),
+    $hover-icon-color: var(--category-text-color)
+  );
+}
+
+body.category #create-topic {
+  margin-left: 0.5em;
+}
