@@ -1,15 +1,15 @@
-import { createWidget } from "discourse/widgets/widget";
 import Category from "discourse/models/category";
+import { createWidget } from "discourse/widgets/widget";
 import { getOwner } from "discourse-common/lib/get-owner";
 
 export default createWidget("category-color", {
   tagName: "",
 
   html() {
-    const router = getOwner(this).lookup("router:main");
+    const router = getOwner(this).lookup("service:router");
     const route = router.currentRoute;
 
-    if (route && route.params) {
+    if (route?.params) {
       let category;
       let categoryColor;
       let categoryTextColor;
@@ -35,20 +35,15 @@ export default createWidget("category-color", {
       }
 
       if (categoryColor) {
-        console.log(categoryColor);
-
         // set category color as custom CSS property
-        document
-          .querySelector("body")
-          .style.setProperty("--category-color", categoryColor);
-        document
-          .querySelector("body")
-          .style.setProperty("--category-text-color", categoryTextColor);
+        document.body.style.setProperty("--category-color", categoryColor);
+        document.body.style.setProperty(
+          "--category-text-color",
+          categoryTextColor
+        );
       } else {
-        document.querySelector("body").style.removeProperty("--category-color");
-        document
-          .querySelector("body")
-          .style.removeProperty("--category-text-color");
+        document.body.style.removeProperty("--category-color");
+        document.body.style.removeProperty("--category-text-color");
       }
     }
   },

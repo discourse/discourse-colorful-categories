@@ -20,19 +20,15 @@ export default {
           }
 
           if (categoryCreateId || categoryReplyId) {
-            document
-              .querySelector("body")
-              .style.setProperty(
-                "--composer-category-color",
-                "#" + category.color
-              );
+            document.body.style.setProperty(
+              "--composer-category-color",
+              "#" + category.color
+            );
 
-            document
-              .querySelector("body")
-              .style.setProperty(
-                "--composer-category-text-color",
-                "#" + category.text_color
-              );
+            document.body.style.setProperty(
+              "--composer-category-text-color",
+              "#" + category.text_color
+            );
           }
         },
       });
