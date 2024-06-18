@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 he:
+  theme_metadata:
+    description: "הרכיב הזה כולל צבעי קטגוריות במקומות נוספים ברחבי Discourse"
