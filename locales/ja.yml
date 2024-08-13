@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 ja:
+  theme_metadata:
+    description: "このコンポーネントは、Discourse を通じてより多くの場所にカテゴリの色を含めます"

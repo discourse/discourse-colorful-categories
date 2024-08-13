@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 it:
+  theme_metadata:
+    description: "Questo componente include i colori delle categorie in più punti di Discourse"

@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 nl:
+  theme_metadata:
+    description: "Deze component voegt categoriekleuren toe op meer plaatsen in Discourse"
