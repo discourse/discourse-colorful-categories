@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 ar:
+  theme_metadata:
+    description: "يتضمَّن هذا المكوِّن ألوان الفئات في المزيد من الأماكن في Discourse"

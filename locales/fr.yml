@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 fr:
+  theme_metadata:
+    description: "Ce composant inclut les couleurs des catégories à plusieurs endroits dans Discourse"

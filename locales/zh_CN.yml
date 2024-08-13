@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 zh_CN:
+  theme_metadata:
+    description: "此组件在整个 Discourse 的更多地方包含类别颜色"

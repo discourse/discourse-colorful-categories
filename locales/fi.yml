@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 fi:
+  theme_metadata:
+    description: "Tämä komponentti sisältää alueen värejä useammissa paikoissa Discoursessa"

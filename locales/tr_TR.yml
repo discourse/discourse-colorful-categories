@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 tr_TR:
+  theme_metadata:
+    description: "Bu bileşen, Discourse boyunca daha fazla yerde kategori renkleri içerir"
