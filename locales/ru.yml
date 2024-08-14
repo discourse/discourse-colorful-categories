@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 ru:
+  theme_metadata:
+    description: "Этот компонент включает цвета категорий в большем количестве мест в Discourse"
