@@ -5,7 +5,7 @@ export default {
   name: "initialize-composer-color",
   initialize() {
     withPluginApi("0.8.7", (api) => {
-      api.modifyClass("controller:composer", {
+      api.modifyClass("service:composer", {
         pluginId: "colorful-categories",
         @observes("model.categoryId")
         getCategory() {
