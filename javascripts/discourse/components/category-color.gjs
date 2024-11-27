@@ -1,7 +1,6 @@
 import Component from "@glimmer/component";
-import { service } from "@ember/service";
-import { tracked } from "@glimmer/tracking";
 import { action } from "@ember/object";
+import { service } from "@ember/service";
 import Category from "discourse/models/category";
 
 function applyCategoryColors(color, textColor) {
@@ -37,7 +36,6 @@ export default class CategoryColor extends Component {
   }
 
   get isTopicRoute() {
-    console.log(this.router.currentRoute.name);
     return this.router.currentRoute.name.includes("topic.fromParams");
   }
 

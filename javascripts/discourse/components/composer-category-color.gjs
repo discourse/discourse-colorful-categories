@@ -1,8 +1,8 @@
 import Component from "@glimmer/component";
-import { inject as service } from "@ember/service";
 import { action } from "@ember/object";
-import Category from "discourse/models/category";
 import { addObserver, removeObserver } from "@ember/object/observers";
+import { service } from "@ember/service";
+import Category from "discourse/models/category";
 
 export default class ComposerCategoryColor extends Component {
   @service composer;
