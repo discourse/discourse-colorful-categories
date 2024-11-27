@@ -57,4 +57,6 @@ export default class CategoryColor extends Component {
       clearCategoryColors();
     }
   }
+
+  <template></template>
 }

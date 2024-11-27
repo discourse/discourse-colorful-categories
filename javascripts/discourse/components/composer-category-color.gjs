@@ -77,4 +77,6 @@ export default class ComposerCategoryColor extends Component {
     document.body.style.removeProperty("--composer-category-color");
     document.body.style.removeProperty("--composer-category-text-color");
   }
+
+  <template></template>
 }
