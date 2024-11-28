@@ -1,3 +1,8 @@
 en:
   theme_metadata:
     description: "This component includes category colors in more places throughout Discourse"
+    settings:
+      use_category_color_in_composer: disable to use default composer colors
+      use_category_color_in_header: disable to use default header colors
+      use_category_color_in_timeline: disable to use default timline colors
+      use_category_color_in_buttons: disable to use default button colors

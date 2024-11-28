@@ -1,19 +1,15 @@
 use_category_color_in_composer:
   type: bool
   default: true
-  description: disable to use default composer colors
 
 use_category_color_in_header:
   type: bool
   default: true
-  description: disable to use default header colors
 
 use_category_color_in_timeline:
   type: bool
   default: true
-  description: disable to use default topic timeline colors
 
 use_category_color_in_buttons:
   type: bool
   default: true
-  description: disable to use default button colors
