@@ -7,3 +7,8 @@
 he:
   theme_metadata:
     description: "הרכיב הזה כולל צבעי קטגוריות במקומות נוספים ברחבי Discourse"
+    settings:
+      use_category_color_in_composer: יש להשבית כדי להשתמש בצבעי ברירת המחדל של העורך
+      use_category_color_in_header: יש להשבית כדי להשתמש בצבעי ברירת המחדל של הכותרת
+      use_category_color_in_timeline: יש להשבית כדי להשתמש בצבעי ברירת המחדל של ציר הזמן
+      use_category_color_in_buttons: יש להשבית כדי להשתמש בצבעי ברירת המחדל של הכפתור
