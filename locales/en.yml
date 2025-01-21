@@ -4,5 +4,5 @@ en:
     settings:
       use_category_color_in_composer: disable to use default composer colors
       use_category_color_in_header: disable to use default header colors
-      use_category_color_in_timeline: disable to use default timline colors
+      use_category_color_in_timeline: disable to use default timeline colors
       use_category_color_in_buttons: disable to use default button colors
