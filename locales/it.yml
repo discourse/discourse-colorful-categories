@@ -7,3 +7,7 @@
 it:
   theme_metadata:
     description: "Questo componente include i colori delle categorie in più punti di Discourse"
+    settings:
+      use_category_color_in_composer: disabilita per usare i colori predefiniti del composer
+      use_category_color_in_header: disabilita per usare i colori predefiniti dell'intestazione
+      use_category_color_in_buttons: disabilita per usare i colori predefiniti dei pulsanti

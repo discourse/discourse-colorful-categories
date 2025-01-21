@@ -5,3 +5,6 @@
 # https://translate.discourse.org/
 
 ro:
+  theme_metadata:
+    settings:
+      use_category_color_in_timeline: dezactivează pentru a utiliza culorile implicite ale cronologiei

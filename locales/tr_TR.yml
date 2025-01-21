@@ -7,3 +7,7 @@
 tr_TR:
   theme_metadata:
     description: "Bu bileşen, Discourse boyunca daha fazla yerde kategori renkleri içerir"
+    settings:
+      use_category_color_in_composer: varsayılan besteci renklerini kullanmayı devre dışı bırak
+      use_category_color_in_header: varsayılan başlık renklerini kullanmayı devre dışı bırak
+      use_category_color_in_buttons: varsayılan düğme renklerini kullanmayı devre dışı bırak
