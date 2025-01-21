@@ -7,3 +7,7 @@
 fr:
   theme_metadata:
     description: "Ce composant inclut les couleurs des catégories à plusieurs endroits dans Discourse"
+    settings:
+      use_category_color_in_composer: désactiver pour utiliser les couleurs par défaut du compositeur
+      use_category_color_in_header: désactiver pour utiliser les couleurs d'en-tête par défaut
+      use_category_color_in_buttons: désactiver pour utiliser les couleurs des boutons par défaut

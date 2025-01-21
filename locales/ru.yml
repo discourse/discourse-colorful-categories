@@ -7,3 +7,7 @@
 ru:
   theme_metadata:
     description: "Этот компонент включает цвета категорий в большем количестве мест в Discourse"
+    settings:
+      use_category_color_in_composer: отключить использование цветов редактора по умолчанию
+      use_category_color_in_header: отключить использование цветов заголовков по умолчанию
+      use_category_color_in_buttons: отключить использование цветов кнопок по умолчанию

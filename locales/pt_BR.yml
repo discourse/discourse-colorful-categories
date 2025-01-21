@@ -7,3 +7,8 @@
 pt_BR:
   theme_metadata:
     description: "Este componente inclui cores de categorias em mais lugares do Discourse"
+    settings:
+      use_category_color_in_composer: desative para usar as cores padrão do compositor
+      use_category_color_in_header: desative para usar as cores padrão do cabeçalho
+      use_category_color_in_timeline: desative para usar as cores padrão da linha de tempo
+      use_category_color_in_buttons: desative para usar as cores padrão do botão

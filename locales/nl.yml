@@ -7,3 +7,7 @@
 nl:
   theme_metadata:
     description: "Deze component voegt categoriekleuren toe op meer plaatsen in Discourse"
+    settings:
+      use_category_color_in_composer: schakel uit om standaard editorkleuren te gebruiken
+      use_category_color_in_header: schakel uit om standaard kopkleuren te gebruiken
+      use_category_color_in_buttons: schakel uit om standaard knopkleuren te gebruiken

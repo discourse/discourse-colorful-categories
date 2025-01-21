@@ -7,3 +7,7 @@
 fi:
   theme_metadata:
     description: "Tämä komponentti sisältää alueen värejä useammissa paikoissa Discoursessa"
+    settings:
+      use_category_color_in_composer: poista käytöstä käyttääksesi kirjoitustilan oletusvärejä
+      use_category_color_in_header: poista käytöstä käyttääksesi yläpalkin oletusvärejä
+      use_category_color_in_buttons: poista käytöstä käyttääksesi painikkeiden oletusvärejä

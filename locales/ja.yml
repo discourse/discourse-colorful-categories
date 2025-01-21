@@ -7,3 +7,7 @@
 ja:
   theme_metadata:
     description: "このコンポーネントは、Discourse を通じてより多くの場所にカテゴリの色を含めます"
+    settings:
+      use_category_color_in_composer: デフォルトのコンポーザーの色の使用を無効にする
+      use_category_color_in_header: デフォルトのヘッダーの色の使用を無効にする
+      use_category_color_in_buttons: デフォルトのボタンの色の使用を無効にする

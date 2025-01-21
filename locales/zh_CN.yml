@@ -7,3 +7,7 @@
 zh_CN:
   theme_metadata:
     description: "此组件在整个 Discourse 的更多地方包含类别颜色"
+    settings:
+      use_category_color_in_composer: 禁止以使用默认编辑器颜色
+      use_category_color_in_header: 禁止以使用默认标题颜色
+      use_category_color_in_buttons: 禁止以使用默认按钮颜色
