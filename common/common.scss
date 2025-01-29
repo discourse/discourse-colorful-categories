@@ -123,3 +123,19 @@ $category-badge-style: null !default; // helps detect the category badge styles 
     margin-bottom: 0.5em;
   }
 }
+
+// need to reset some styles overridden by the button mixin
+
+.sidebar-more-section-trigger {
+  justify-content: start;
+  padding-left: var(--d-sidebar-row-horizontal-padding);
+  .d-icon {
+    color: var(--d-sidebar-link-icon-color);
+  }
+  .discourse-no-touch & {
+    &:hover {
+      background: var(--d-sidebar-highlight-background);
+      color: var(--d-sidebar-link-color);
+    }
+  }
+}
