@@ -10,4 +10,5 @@ it:
     settings:
       use_category_color_in_composer: disabilita per usare i colori predefiniti del composer
       use_category_color_in_header: disabilita per usare i colori predefiniti dell'intestazione
+      use_category_color_in_timeline: disabilita per usare i colori predefiniti della timeline
       use_category_color_in_buttons: disabilita per usare i colori predefiniti dei pulsanti

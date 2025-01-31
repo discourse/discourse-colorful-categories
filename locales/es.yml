@@ -10,4 +10,5 @@ es:
     settings:
       use_category_color_in_composer: desactivar para usar los colores por defecto del compositor
       use_category_color_in_header: desactivar para usar los colores por defecto del encabezado
+      use_category_color_in_timeline: desactivar para usar los colores por defecto de la línea de tiempo
       use_category_color_in_buttons: desactivar para usar los colores por defecto del botón

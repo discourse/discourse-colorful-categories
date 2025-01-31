@@ -10,4 +10,5 @@ nl:
     settings:
       use_category_color_in_composer: schakel uit om standaard editorkleuren te gebruiken
       use_category_color_in_header: schakel uit om standaard kopkleuren te gebruiken
+      use_category_color_in_timeline: schakel uit om standaard tijdlijnkleuren te gebruiken
       use_category_color_in_buttons: schakel uit om standaard knopkleuren te gebruiken
