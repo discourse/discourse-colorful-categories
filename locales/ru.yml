@@ -10,4 +10,5 @@ ru:
     settings:
       use_category_color_in_composer: отключить использование цветов редактора по умолчанию
       use_category_color_in_header: отключить использование цветов заголовков по умолчанию
+      use_category_color_in_timeline: отключить использование цветов временной шкалы по умолчанию
       use_category_color_in_buttons: отключить использование цветов кнопок по умолчанию

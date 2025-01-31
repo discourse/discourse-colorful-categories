@@ -7,3 +7,8 @@
 ar:
   theme_metadata:
     description: "يتضمَّن هذا المكوِّن ألوان الفئات في المزيد من الأماكن في Discourse"
+    settings:
+      use_category_color_in_composer: إيقاف استخدام الألوان الافتراضية لأداة الإنشاء
+      use_category_color_in_header: إيقاف استخدام الألوان الافتراضية للرؤوس
+      use_category_color_in_timeline: إيقاف استخدام الألوان الافتراضية للجداول الزمنية
+      use_category_color_in_buttons: إيقاف استخدام الألوان الافتراضية للأزرار

@@ -10,4 +10,5 @@ ja:
     settings:
       use_category_color_in_composer: デフォルトのコンポーザーの色の使用を無効にする
       use_category_color_in_header: デフォルトのヘッダーの色の使用を無効にする
+      use_category_color_in_timeline: デフォルトのタイムラインの色の使用を無効にする
       use_category_color_in_buttons: デフォルトのボタンの色の使用を無効にする

@@ -10,4 +10,5 @@ tr_TR:
     settings:
       use_category_color_in_composer: varsayılan besteci renklerini kullanmayı devre dışı bırak
       use_category_color_in_header: varsayılan başlık renklerini kullanmayı devre dışı bırak
+      use_category_color_in_timeline: varsayılan zaman çizelgesi renklerini kullanmayı devre dışı bırak
       use_category_color_in_buttons: varsayılan düğme renklerini kullanmayı devre dışı bırak

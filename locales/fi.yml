@@ -10,4 +10,5 @@ fi:
     settings:
       use_category_color_in_composer: poista käytöstä käyttääksesi kirjoitustilan oletusvärejä
       use_category_color_in_header: poista käytöstä käyttääksesi yläpalkin oletusvärejä
+      use_category_color_in_timeline: poista käytöstä käyttääksesi aikajanan oletusvärejä
       use_category_color_in_buttons: poista käytöstä käyttääksesi painikkeiden oletusvärejä

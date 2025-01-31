@@ -10,4 +10,5 @@ de:
     settings:
       use_category_color_in_composer: deaktivieren, um die Standardfarben des Editors zu verwenden
       use_category_color_in_header: deaktivieren, um die Standard-Kopfzeilen-Farben zu verwenden
+      use_category_color_in_timeline: deaktivieren, um die Standardfarben der Zeitleiste zu verwenden
       use_category_color_in_buttons: deaktivieren, um die Standardfarben für Schaltflächen zu verwenden
