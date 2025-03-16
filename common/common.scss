@@ -13,7 +13,8 @@ $category-badge-style: null !default; // helps detect the category badge styles 
     .grippie {
       transition: background-color 0.25s;
       background-color: var(--composer-category-color, var(--tertiary));
-      &:before {
+
+      &::before {
         border-color: var(--composer-category-text-color, var(--secondary));
       }
     }
@@ -22,6 +23,7 @@ $category-badge-style: null !default; // helps detect the category badge styles 
       .btn-primary {
         background-color: var(--composer-category-color);
         color: var(--composer-category-text-color, var(--secondary));
+
         .d-icon {
           color: var(--composer-category-text-color, var(--secondary));
         }
@@ -43,11 +45,12 @@ $category-badge-style: null !default; // helps detect the category badge styles 
       }
     }
 
-    @if $category-badge-style == null {
+    @if not $category-badge-style {
       // checks for category badge styles theme component
       .extra-info-wrapper .badge-category__wrapper .badge-category {
         color: var(--category-text-color);
-        &:before {
+
+        &::before {
           box-shadow: inset 0 0 0 1px var(--category-text-color);
         }
       }
@@ -59,10 +62,12 @@ $category-badge-style: null !default; // helps detect the category badge styles 
     .d-icon {
       color: var(--category-text-color, var(--header_primary-low-mid));
     }
+
     .discourse-no-touch & {
       &:hover,
       &:focus {
         color: var(--category-text-color, var(--header_primary-low));
+
         .d-icon {
           color: var(--category-color, var(--header_primary-medium));
         }
@@ -77,10 +82,12 @@ $category-badge-style: null !default; // helps detect the category badge styles 
   .extra-info-wrapper {
     .topic-link {
       color: var(--category-text-color, var(--header_primary-high));
+
       .d-icon {
-        color: currentColor;
+        color: currentcolor;
       }
     }
+
     .discourse-tag {
       color: var(
         --category-text-color,
@@ -118,20 +125,20 @@ $category-badge-style: null !default; // helps detect the category badge styles 
   }
 
   // the above include reset some margins, need to add them back
-
   #topic-footer-buttons .btn.btn-primary {
     margin-bottom: 0.5em;
   }
 }
 
 // need to reset some styles overridden by the button mixin
-
 .sidebar-more-section-trigger {
   justify-content: start;
   padding-left: var(--d-sidebar-row-horizontal-padding);
+
   .d-icon {
     color: var(--d-sidebar-link-icon-color);
   }
+
   .discourse-no-touch & {
     &:hover {
       background: var(--d-sidebar-highlight-background);
