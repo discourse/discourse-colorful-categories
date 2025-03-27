@@ -9,7 +9,7 @@ $category-badge-style: null !default; // helps detect the category badge styles 
 }
 
 @if $use-category-color-in-composer == "true" {
-  #reply-control {
+  #reply-control.open {
     .grippie {
       transition: background-color 0.25s;
       background-color: var(--composer-category-color, var(--tertiary));
