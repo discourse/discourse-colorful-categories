@@ -4,11 +4,14 @@ RSpec.describe "Colorful Categories", system: true do
   fab!(:user)
   fab!(:category) { Fabricate(:category, color: "DABBED") }
   fab!(:topic) { Fabricate(:topic, category: category) }
-  3.times { fab!(:post) { Fabricate(:post, topic: topic) } }
+  fab!(:posts) { Fabricate.times(3, :post, topic: topic) }
 
-  let!(:theme) { upload_theme_component }
+  let(:topic_page) { PageObjects::Pages::Topic.new }
 
-  before { sign_in(user) }
+  before do
+    upload_theme_component
+    sign_in(user)
+  end
 
   context "when visiting a category page" do
     it "changes the header background color" do
@@ -55,6 +58,7 @@ RSpec.describe "Colorful Categories", system: true do
 
     it "changes the composer color" do
       find("#topic-footer-buttons .create").click
+      expect(topic_page).to have_expanded_composer
 
       grippie_color =
         page.evaluate_script(
