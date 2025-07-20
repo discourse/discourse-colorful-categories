@@ -6,6 +6,8 @@ RSpec.describe "Colorful Categories", system: true do
   fab!(:topic) { Fabricate(:topic, category: category) }
   fab!(:posts) { Fabricate.times(3, :post, topic: topic) }
 
+  let(:topic_page) { PageObjects::Pages::Topic.new }
+
   before do
     upload_theme_component
     sign_in(user)
@@ -56,6 +58,7 @@ RSpec.describe "Colorful Categories", system: true do
 
     it "changes the composer color" do
       find("#topic-footer-buttons .create").click
+      expect(topic_page).to have_expanded_composer
 
       grippie_color =
         page.evaluate_script(
