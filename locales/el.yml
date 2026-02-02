@@ -5,3 +5,10 @@
 # https://translate.discourse.org/
 
 el:
+  theme_metadata:
+    description: "Αυτό το στοιχείο περιλαμβάνει χρώματα κατηγοριών σε περισσότερα σημεία σε όλο το Discourse"
+    settings:
+      use_category_color_in_composer: απενεργοποιήστε για χρήση προεπιλεγμένων χρωμάτων συνθέτη
+      use_category_color_in_header: απενεργοποιήστε για χρήση προεπιλεγμένων χρωμάτων κεφαλίδας
+      use_category_color_in_timeline: απενεργοποιήστε για χρήση προεπιλεγμένων χρωμάτων χρονολογίου
+      use_category_color_in_buttons: απενεργοποιήστε για χρήση προεπιλεγμένων χρωμάτων κουμπιών
