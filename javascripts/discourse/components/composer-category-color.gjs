@@ -1,3 +1,4 @@
+/* eslint-disable ember/no-observers */
 import Component from "@glimmer/component";
 import { action } from "@ember/object";
 import { addObserver, removeObserver } from "@ember/object/observers";
